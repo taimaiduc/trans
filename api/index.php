@@ -1,5 +1,6 @@
 <?php
-include_once '../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+
 $text = $_GET['s'] ?? 'Basically, we will change new flow for register. I just extent and create new file. Some UI will change in staging';
 $json = json_decode(file_get_contents('http://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=' . urlencode($text)));
 $json2 = json_decode(file_get_contents('http://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=vi&dt=t&q=' . urlencode($text)));
