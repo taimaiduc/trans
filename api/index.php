@@ -5,12 +5,15 @@ $text = $_GET['s'] ?? 'Basically, we will change new flow for register. I just e
 
 echo "EN: \n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'en', 'auto');
+echo "\n";
 
 echo "\n VI:\n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'vi', 'auto');
+echo "\n";
 
 echo "\n DE:\n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'de', 'auto');
+echo "\n";
 
 echo "\n FR:\n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'fr', 'auto');
