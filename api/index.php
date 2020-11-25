@@ -7,13 +7,13 @@ echo "EN: \n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'en', 'auto');
 echo "\n";
 
-echo "\n VI:\n";
+echo "\nVI:\n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'vi', 'auto');
 echo "\n";
 
-echo "\n DE:\n";
+echo "\nDE:\n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'de', 'auto');
 echo "\n";
 
-echo "\n FR:\n";
+echo "\nFR:\n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'fr', 'auto');
