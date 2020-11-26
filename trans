@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+text="$(xsel -o)"
+translate="$(wget -U "Mozilla/5.0" -qO - "https://trans-two.vercel.app?s=$(echo $text)" | sed "s/,,,0]],,.*//g" | awk -F'"' '{print $1}')"
+echo -e "Original text:\n" " $text"'\n' > /tmp/notitrans
+echo -e "Translation:\n" "$translate" >> /tmp/notitrans
+zenity --text-info --width=800 --height=600 --title="Translation" --filename=/tmp/notitrans
