@@ -11,6 +11,7 @@ echo "\n";
 echo "\nVI:\n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'vi', 'auto');
 if($ios){
+header('Content-Type: text/plain; charset=utf-8');
 exit(200);
 }
 echo "\n";
