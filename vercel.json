@@ -5,12 +5,12 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        },
-        {
             "src": "/ios",
             "dest": "/api/ios.php"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
         }
     ]
 }
