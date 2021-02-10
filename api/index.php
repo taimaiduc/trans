@@ -3,7 +3,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 $text = $_GET['s'] ?? die();
 $ios = $_GET['ios'] ?? false;
-
+header('Content-Type: text/plain; charset=utf-8');
 echo "EN: \n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'en', 'auto');
 echo "\n";
@@ -11,7 +11,6 @@ echo "\n";
 echo "\nVI:\n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'vi', 'auto');
 if($ios){
-header('Content-Type: text/plain; charset=utf-8');
 exit(200);
 }
 echo "\n";
