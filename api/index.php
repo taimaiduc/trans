@@ -21,3 +21,6 @@ echo "\n";
 //usleep(50);
 echo "\nFR:\n";
 echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'fr', 'auto');
+echo "\n";
+echo "\nPT:\n";
+echo \Stichoza\GoogleTranslate\GoogleTranslate::trans($text, 'pt', 'auto');
